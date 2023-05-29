@@ -1,0 +1,9 @@
+
+server:
+  port: 9090
+
+#management.port: 8081
+
+logging:
+  level:
+    root: WARN

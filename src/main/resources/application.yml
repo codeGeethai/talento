@@ -1,0 +1,24 @@
+app:
+  name: Talento
+  description: A Talent Hunting Portal
+
+server:
+  port: 8080
+
+#management.port: 8081
+
+springdoc:
+  swagger-ui.path: /docs/swagger-ui.html
+  api-docs.path: /docs/v3/api-docs
+
+
+logging:
+  level:
+    root: TRACE
+
+#logging.level.org.brainbox.talento: TRACE
+#logging.file: /Users/geethai/coding/java/talento/applogger.log
+
+spring:
+  profiles:
+    active: dev
