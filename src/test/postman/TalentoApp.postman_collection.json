@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "fc953286-0c49-405b-90e5-bc280e554657",
+		"name": "TalentoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllCandidates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCandidate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add  A New Candidate",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"5\",\n        \"name\": \"Chikoo\",\n        \"phoneNumber\": \"+91988723XXXX\",\n        \"emailId\": \"xxxchikoo@gmail.com\",\n        \"dateofBirth\": \"01-01-2000\",\n        \"address\": \"1,Royal Street, Chennai\",\n        \"workLocation\": \"Remote\",\n        \"interviews\":[\n                        {\n                                \"id\": \"501\",\n                                \"company\": \"NAB\",\n                                \"company_contact\":\"Murali\",\n                                \"status\":\"Pass\",\n                                \"stage\":\"Stage 1 - Tech round scheduled\"\n                        },\n                        {\n                                \"id\": \"601\",\n                                \"company\": \"ANZ\",\n                                \"company_contact\":\"Murali\",\n                                \"status\":\"Pass\",\n                                \"stage\":\"Stage 1 - Tech round scheduled\"\n                        }\n                    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"5\",\n        \"name\": \"Chikoo\",\n        \"phoneNumber\": \"+91988723XXXX\",\n        \"emailId\": \"xxxchikoo@gmail.com\",\n        \"dateofBirth\": \"01-01-2000\",\n        \"address\": \"1,Royal Street, Chennai\",\n        \"workLocation\": \"Remote\",\n        \"interviews\":[\n                        {\n                                \"id\": \"501\",\n                                \"company\": \"NAB\",\n                                \"company_contact\":\"Murali\",\n                                \"status\":\"Pass\",\n                                \"stage\":\"Stage 1 - Tech round scheduled\"\n                        },\n                        {\n                                \"id\": \"601\",\n                                \"company\": \"ANZ\",\n                                \"company_contact\":\"Murali\",\n                                \"status\":\"Pass\",\n                                \"stage\":\"Stage 1 - Tech round scheduled\"\n                        }\n                    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health check Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"5\",\n        \"name\": \"Chikoo\",\n        \"phoneNumber\": \"+91988723XXXX\",\n        \"emailId\": \"xxxchikoo@gmail.com\",\n        \"dateofBirth\": \"01-01-2000\",\n        \"address\": \"1,Royal Street, Chennai\",\n        \"workLocation\": \"Remote\",\n        \"interviews\":[\n                        {\n                                \"id\": \"501\",\n                                \"company\": \"NAB\",\n                                \"company_contact\":\"Murali\",\n                                \"status\":\"Pass\",\n                                \"stage\":\"Stage 1 - Tech round scheduled\"\n                        },\n                        {\n                                \"id\": \"601\",\n                                \"company\": \"ANZ\",\n                                \"company_contact\":\"Murali\",\n                                \"status\":\"Pass\",\n                                \"stage\":\"Stage 1 - Tech round scheduled\"\n                        }\n                    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Dummy Candidate",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"5\",\n        \"name\": \"Chikoo\",\n        \"phoneNumber\": \"+91988723XXXX\",\n        \"emailId\": \"xxxchikoo@gmail.com\",\n        \"dateofBirth\": \"01-01-2000\",\n        \"address\": \"1,Royal Street, Chennai\",\n        \"workLocation\": \"Remote\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update A Candidate",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"5\",\n        \"name\": \"Chikoo\",\n        \"phoneNumber\": \"+91988723XXXX\",\n        \"emailId\": \"xxxchikoo@yahoo.com\",\n        \"dateofBirth\": \"01-01-2020\",\n        \"address\": \"1,Royal Street, Chennai\",\n        \"workLocation\": \"Remote\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Candidate",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"1\",\n        \"name\": \"Geethai\",\n        \"phoneNumber\": \"047068XXXX\",\n        \"emailId\": \"xxxgeethai@gmail.com\",\n        \"dateofBirth\": \"01-01-1982\",\n        \"address\": \"1,Bourke Street, Melbourne\",\n        \"workLocation\": \"Melbourne\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
